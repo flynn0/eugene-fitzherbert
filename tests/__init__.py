@@ -1,1 +1,1 @@
-"""Tests for mandelbrot package."""
+"""Tests for the mandelbrot package."""

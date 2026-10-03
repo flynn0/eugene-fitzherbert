@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mandelbrot-ascii"
+version = "0.1.0"
+description = "Render the Mandelbrot set as ASCII art"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+mandelbrot = "mandelbrot.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["mandelbrot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
