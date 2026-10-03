@@ -1,0 +1,1 @@
+"""Tests for mandelbrot package."""
